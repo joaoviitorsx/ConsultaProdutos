@@ -1,0 +1,784 @@
+2025-03-26 14:11:58,360 | WARNING | Falha no login: motivo='Erro inesperado: 'NoneType' object has no attribute 'get_connection''
+2025-03-26 14:12:14,793 | WARNING | Falha no login: motivo='Erro inesperado: 'NoneType' object has no attribute 'get_connection''
+2025-03-26 14:15:39,957 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-26 14:15:57,794 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 14:15:58,426 | ERROR | Erro ao salvar fornecedor no banco.
+2025-03-26 14:16:16,936 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-26 14:26:30,599 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-26 14:28:33,905 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 14:28:34,861 | ERROR | Erro ao salvar fornecedor no banco.
+2025-03-26 14:28:42,927 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-26 14:28:44,533 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-26 14:36:52,682 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-26 14:37:09,865 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 14:37:10,388 | ERROR | Erro ao salvar fornecedor no banco.
+2025-03-26 14:37:23,639 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-26 14:43:33,775 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-26 14:43:52,706 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 14:44:01,287 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-26 14:47:16,369 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-26 14:47:28,897 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 14:47:28,903 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-26 14:47:37,043 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 14:47:37,047 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-26 14:51:47,351 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-26 14:52:02,266 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 14:52:02,294 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-26 14:53:54,680 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-26 14:54:07,320 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 14:54:07,340 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-26 14:54:12,885 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 14:54:12,889 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-26 14:58:33,033 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-26 15:00:33,017 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-26 15:00:44,763 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 15:00:44,774 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-26 15:03:40,037 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-26 15:03:51,959 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-26 15:03:51,963 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-27 09:02:47,058 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:03:54,397 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:03:54,407 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-27 09:11:47,413 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:11:51,606 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:11:51,613 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-27 09:15:30,630 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:15:34,209 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:15:34,212 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-27 09:18:13,748 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:18:17,479 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:18:17,482 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-27 09:20:36,878 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:21:01,823 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:21:01,830 | ERROR | Erro no serviço de fornecedor: Fornecedor.__init__() got an unexpected keyword argument 'id'
+2025-03-27 09:24:22,822 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:24:26,719 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:26:27,133 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:26:34,608 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:30:39,610 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-27 09:30:42,988 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:30:51,292 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:31:13,779 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 09:32:59,177 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:33:24,117 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:33:40,781 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 09:35:50,633 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:35:54,237 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:36:04,193 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 09:39:14,409 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:39:35,096 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:39:47,166 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 09:46:53,079 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:46:56,821 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:47:05,496 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 09:48:59,462 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:49:02,140 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:49:20,669 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 09:56:01,847 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 09:56:04,956 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 09:56:10,459 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 09:58:06,140 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 10:02:00,515 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 10:10:33,213 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 10:12:03,638 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 10:17:11,248 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 10:22:18,587 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 10:25:39,522 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 10:25:59,221 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 10:39:28,737 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 10:40:53,505 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 10:40:59,782 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 10:41:21,183 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 10:41:34,316 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 10:41:34,321 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 10:41:40,673 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 11:00:53,465 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 11:01:06,787 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 11:01:30,675 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 11:14:35,672 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 11:21:28,911 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 11:39:54,423 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 11:53:09,828 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 11:53:42,777 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 11:53:59,133 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:11:11,431 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:12:12,465 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:15:57,944 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:30:45,092 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:31:07,206 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:31:41,635 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:32:47,515 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:34:33,201 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:35:14,739 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:35:44,087 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:37:19,009 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:38:00,507 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:38:13,759 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-27 12:38:15,418 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:38:59,037 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:39:23,247 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:39:43,516 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:40:19,918 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 12:41:42,794 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 12:44:59,186 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 12:47:08,097 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 12:47:49,409 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 12:48:42,294 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 12:49:10,198 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 12:49:43,640 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 12:50:00,374 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 12:50:00,388 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 12:50:08,480 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 12:51:15,447 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 12:51:24,272 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 12:51:24,278 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 12:58:38,000 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 12:58:49,844 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 12:58:49,848 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 12:59:00,221 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 12:59:15,611 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 12:59:15,617 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:36:58,044 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 13:37:08,249 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:37:08,270 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:38:51,212 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 13:39:21,626 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:39:21,631 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:47:57,777 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 13:48:10,132 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:48:10,138 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:48:56,590 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-27 13:48:59,903 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 13:49:08,725 | INFO | Consulta de fornecedor: CNPJ=51616173000168 | empresa_id=1
+2025-03-27 13:49:08,732 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-27 13:49:09,281 | INFO | 📦 Dados recebidos da API: (None, None, None, None, None)
+2025-03-27 13:49:09,281 | WARNING | ⚠️ API retornou dados incompletos ou inválidos.
+2025-03-27 13:49:28,844 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:49:28,851 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:49:58,800 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 13:50:09,011 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:50:09,016 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:54:20,170 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 13:54:32,163 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:54:32,172 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:54:34,048 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:54:34,053 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:54:34,636 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:54:34,657 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:54:34,885 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:54:34,891 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:54:35,064 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:54:35,066 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:54:35,256 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:54:35,259 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:54:35,406 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:54:35,407 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:54:35,575 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:54:35,578 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:54:35,728 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:54:35,733 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:55:33,682 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 13:55:42,612 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:55:42,621 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:55:44,101 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:55:44,108 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 13:58:33,720 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 13:58:48,093 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 13:58:48,098 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:01:26,123 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:01:34,365 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:01:34,370 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:10:09,582 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:10:19,917 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:10:19,931 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:10:43,850 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:10:50,916 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:10:50,921 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:11:45,528 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:11:52,788 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:11:52,792 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:16:15,607 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:16:37,076 | INFO | Consulta de fornecedor: CNPJ=64616173000168 | empresa_id=1
+2025-03-27 14:16:37,080 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-27 14:16:37,597 | INFO | 📦 Dados recebidos da API: (None, None, None, None, None)
+2025-03-27 14:16:37,598 | WARNING | ⚠️ API retornou dados incompletos ou inválidos.
+2025-03-27 14:16:48,287 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:16:48,290 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:23:36,130 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-27 14:23:38,711 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:23:47,605 | INFO | Consulta de fornecedor: CNPJ=64616173000168 | empresa_id=1
+2025-03-27 14:23:47,607 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-27 14:23:48,068 | INFO | 📦 Dados recebidos da API: (None, None, None, None, None)
+2025-03-27 14:23:48,068 | WARNING | ⚠️ API retornou dados incompletos ou inválidos.
+2025-03-27 14:23:54,879 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:23:54,884 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:25:21,268 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:25:27,358 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:25:27,364 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:25:59,197 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 14:30:14,242 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:30:21,998 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:30:22,003 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:30:36,146 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 14:33:43,904 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:33:49,645 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:33:49,649 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:34:04,009 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 14:36:55,766 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:36:55,773 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:39:02,204 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:39:07,053 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:39:07,059 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:39:24,915 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 14:41:55,823 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:42:03,870 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:42:03,876 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:42:14,603 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 14:43:06,812 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:43:12,661 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:43:12,667 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:43:19,579 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 14:44:21,942 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:44:28,566 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:44:28,572 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:44:35,811 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 14:48:47,543 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:48:59,925 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:48:59,930 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:49:08,963 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 14:49:54,316 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:50:00,926 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:50:00,928 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:50:07,843 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 14:51:19,956 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-27 14:51:26,150 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-27 14:51:26,154 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-27 14:51:30,674 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-27 14:52:33,771 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 14:53:11,192 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-27 14:53:19,656 | INFO | Login realizado: user='jm' empresa_id=2
+2025-03-27 14:53:27,261 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=2
+2025-03-27 14:53:27,264 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-27 14:53:27,786 | INFO | 📦 Dados recebidos da API: ('J. A. DE SOUZA PESCADOS LIMITADA', '4634603', False, 'CE', True)
+2025-03-27 14:53:38,106 | INFO | Consulta de produto: código=52746 | empresa_id=2
+2025-03-27 14:53:39,394 | INFO | Consulta de produto: código=52746 | empresa_id=2
+2025-03-27 14:53:40,660 | INFO | Consulta de produto: código=52746 | empresa_id=2
+2025-03-27 14:53:41,834 | INFO | Consulta de produto: código=52746 | empresa_id=2
+2025-03-27 14:53:42,012 | INFO | Consulta de produto: código=52746 | empresa_id=2
+2025-03-27 14:53:42,875 | INFO | Consulta de produto: código=52746 | empresa_id=2
+2025-03-27 14:53:43,643 | INFO | Consulta de produto: código=52746 | empresa_id=2
+2025-03-28 08:54:33,150 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 08:54:42,015 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 08:54:42,024 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-28 08:54:47,420 | INFO | Consulta de produto: código=54762 | empresa_id=1
+2025-03-28 08:54:49,364 | INFO | Consulta de produto: código=54762 | empresa_id=1
+2025-03-28 08:54:51,052 | INFO | Consulta de produto: código=54762 | empresa_id=1
+2025-03-28 08:54:59,645 | INFO | Consulta de produto: código=54762 | empresa_id=1
+2025-03-28 08:55:02,380 | INFO | Consulta de produto: código=54762 | empresa_id=1
+2025-03-28 09:03:05,666 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 09:03:14,872 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 09:03:14,885 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-28 09:03:19,260 | INFO | Consulta de produto: código=54712 | empresa_id=1
+2025-03-28 09:04:02,736 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 09:10:04,440 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 09:27:09,512 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 09:29:14,618 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 09:34:17,456 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 09:37:35,905 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 09:56:54,496 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 09:59:15,046 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:00:06,885 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:00:51,561 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:03:04,361 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:09:43,481 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:10:02,244 | INFO | Empresa cadastrada: 'empresa 1' | Usuário: 'empresa1'
+2025-03-28 10:12:20,437 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:12:40,256 | INFO | Empresa cadastrada: 'empresa 2' | Usuário: 'empresa2'
+2025-03-28 10:14:05,413 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:14:14,785 | INFO | Empresa cadastrada: 'empresa 3' | Usuário: 'empresa3'
+2025-03-28 10:15:20,260 | INFO | Login realizado: user='jm' empresa_id=2
+2025-03-28 10:15:31,624 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=2
+2025-03-28 10:15:31,630 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-28 10:23:05,900 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:40:28,073 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:41:27,825 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:45:17,811 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:48:03,669 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:50:28,259 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:52:44,704 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:54:42,021 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 10:56:58,393 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:01:11,265 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:04:11,403 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:08:13,233 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:09:52,504 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:11:15,489 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:13:23,379 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:16:44,239 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:18:54,129 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:38:05,380 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:38:48,007 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:40:47,056 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:41:14,949 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:44:01,417 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:44:15,231 | INFO | Empresa cadastrada: 'empresa teste' | Usuário: 'empresa1'
+2025-03-28 11:50:41,319 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:51:43,767 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 11:52:11,090 | INFO | Empresa cadastrada: 'empresa teste' | Usuário: 'empresa1'
+2025-03-28 11:52:47,286 | INFO | Empresa cadastrada: 'empresa teste' | Usuário: 'empresa2'
+2025-03-28 11:56:22,751 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 12:06:55,634 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 12:11:45,321 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 12:16:51,702 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 12:17:06,733 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 12:17:39,909 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 12:21:41,190 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 13:08:27,470 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 13:26:06,002 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 13:27:59,379 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 13:33:09,729 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 13:40:00,541 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 13:49:14,011 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 13:51:43,434 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 13:55:37,137 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:03:32,260 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:28:07,500 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:32:26,823 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:35:16,868 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:35:50,443 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:38:07,732 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:39:09,794 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:39:29,944 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:41:04,736 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:46:02,830 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:47:42,246 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:50:35,155 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 14:50:58,344 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 14:51:07,276 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 14:51:07,278 | ERROR | ❌ Erro inesperado em fornecedor_service: cannot access local variable 'conn' where it is not associated with a value
+2025-03-28 14:51:11,453 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 14:51:11,454 | ERROR | ❌ Erro inesperado em fornecedor_service: cannot access local variable 'conn' where it is not associated with a value
+2025-03-28 14:52:34,231 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 14:52:42,365 | INFO | Consulta de fornecedor: CNPJ=54616176000168 | empresa_id=1
+2025-03-28 14:52:42,370 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-28 14:52:42,893 | INFO | 📦 Dados recebidos da API: (None, None, None, None, None)
+2025-03-28 14:52:42,894 | WARNING | ⚠️ API retornou dados incompletos ou inválidos.
+2025-03-28 05:03:11,526 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-28 05:03:24,996 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-28 06:06:16,049 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-28 06:07:51,477 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-28 18:59:20,597 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 18:59:37,256 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-28 18:59:52,906 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 19:00:33,582 | INFO | Consulta de fornecedor: CNPJ=54616176000168 | empresa_id=1
+2025-03-28 19:00:33,583 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-28 19:00:34,168 | INFO | 📦 Dados recebidos da API: (None, None, None, None, None)
+2025-03-28 19:00:34,168 | WARNING | ⚠️ API retornou dados incompletos ou inválidos.
+2025-03-28 19:08:30,922 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 19:10:36,993 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 19:10:46,065 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 19:10:56,123 | INFO | Consulta de fornecedor: CNPJ=54616176000168 | empresa_id=1
+2025-03-28 19:10:56,124 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-28 19:10:56,638 | INFO | 📦 Dados recebidos da API: (None, None, None, None, None)
+2025-03-28 19:10:56,638 | WARNING | ⚠️ API retornou dados incompletos ou inválidos.
+2025-03-28 19:12:20,050 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 19:12:20,051 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-28 19:12:20,443 | INFO | 📦 Dados recebidos da API: ('J. A. DE SOUZA PESCADOS LIMITADA', '4634603', False, 'CE', True)
+2025-03-28 19:12:55,171 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 19:15:18,993 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 19:15:26,491 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 19:15:26,492 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-28 19:15:53,734 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:15:55,635 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:16:36,138 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 19:16:42,282 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 19:16:42,284 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-28 19:16:50,830 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:16:51,473 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:16:51,893 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:16:53,023 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:16:59,964 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 19:16:59,966 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-28 19:17:14,268 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:14,437 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:14,610 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:14,788 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:14,950 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:15,114 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:16,979 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:17,126 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:17,279 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:17,448 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:17,661 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:17:17,834 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:19:04,214 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 19:19:11,317 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 19:19:11,318 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-28 19:19:20,652 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:19:20,935 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:19:21,061 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:22:40,421 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 19:22:48,045 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 19:22:48,047 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-28 19:23:12,326 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 19:30:31,791 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 19:47:49,079 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 19:56:41,967 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:01:20,926 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:02:22,341 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:03:02,332 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:03:55,055 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:05:34,003 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:05:50,574 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:07:10,496 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:07:54,496 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:08:16,093 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:09:41,507 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:10:22,765 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:12:51,072 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:13:27,448 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:13:49,492 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:15:44,799 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:17:33,342 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:18:22,165 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:21:43,315 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:24:04,843 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:25:22,448 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:30:07,436 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:35:31,103 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:36:32,508 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:39:51,285 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:42:56,583 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:45:28,042 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:47:27,720 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:48:17,264 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:48:52,494 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:50:12,953 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:50:45,009 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:51:11,879 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:54:33,627 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:57:56,043 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 20:58:38,606 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 21:01:00,319 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 21:03:13,630 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 21:07:16,230 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 21:07:56,916 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 21:08:28,913 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 21:09:11,990 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 21:10:42,897 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 21:11:12,130 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 21:11:25,735 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 23:40:22,302 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-28 23:42:06,108 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-28 23:42:14,095 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-28 23:42:14,097 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-28 23:42:36,472 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 23:42:40,963 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 23:42:41,330 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-28 23:43:35,304 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 03:10:16,858 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:44:35,682 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:45:05,118 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:45:24,249 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:45:40,800 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:46:00,802 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:47:16,213 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:48:30,883 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:48:40,423 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:50:34,684 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:50:52,181 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:52:02,526 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:54:23,643 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:56:25,630 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:59:38,714 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 04:59:50,439 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:00:37,358 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:05:31,220 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:06:23,238 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:07:37,134 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:11:04,393 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:12:09,097 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:22:20,286 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:23:15,700 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:42:01,484 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:43:48,346 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:45:25,464 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:47:21,788 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:47:40,859 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:48:35,314 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:50:32,272 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:57:39,925 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:58:18,206 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 05:59:49,767 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:00:03,783 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:01:05,366 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:02:07,861 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:02:50,228 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:03:35,650 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:05:37,255 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:06:16,730 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:06:57,872 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:08:22,966 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:09:14,539 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:09:33,882 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:11:58,094 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:12:05,289 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:12:13,456 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:13:52,117 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 06:15:16,922 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 07:31:08,648 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:42:20,522 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:44:47,774 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:45:01,499 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:45:14,165 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:45:29,346 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:46:00,185 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:46:42,246 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:48:46,633 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:49:09,192 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-29 17:49:10,725 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:49:25,980 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:49:39,650 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:51:17,074 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:52:43,711 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:54:36,143 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:54:37,374 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:54:38,020 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:55:12,938 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:56:07,395 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:57:03,064 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:59:08,450 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 17:59:38,904 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:01:36,406 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:01:37,486 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:03:18,796 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:04:55,628 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:05:00,620 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:06:16,991 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:07:07,628 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:08:11,086 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:09:24,796 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:12:24,991 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:15:56,244 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:16:18,774 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:16:20,022 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:16:35,890 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:23:39,248 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:24:33,848 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:25:01,819 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:25:46,703 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:27:05,539 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:29:23,871 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:33:40,189 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:34:06,942 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:34:26,827 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:34:37,906 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:34:53,767 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:39:22,938 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-29 18:39:38,252 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-29 18:39:38,253 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-29 18:39:54,395 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-29 18:40:31,449 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:50:12,123 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:50:14,267 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:50:14,820 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:51:07,362 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:53:49,089 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:57:51,988 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 18:59:16,829 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-29 18:59:19,869 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-29 18:59:44,210 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-29 18:59:44,212 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-29 19:01:16,121 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 19:01:45,054 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-29 19:01:47,745 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-29 19:01:59,557 | INFO | Consulta de fornecedor: CNPJ=06889034000165 | empresa_id=1
+2025-03-29 19:01:59,558 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-29 19:02:00,070 | INFO | 📦 Dados recebidos da API: ('VIWACE COMERCIAL E INDUSTRIAL LTDA', '2061400', False, 'CE', False)
+2025-03-29 19:02:09,230 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-29 19:02:27,871 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:37:21,251 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:51:22,891 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:55:30,055 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:56:38,845 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:56:57,475 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:57:38,196 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:58:00,799 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:58:45,171 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:58:59,062 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:59:12,941 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 22:59:27,367 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:00:23,797 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:00:37,121 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:00:53,965 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:07:30,588 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:10:48,783 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:24:17,457 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:24:35,657 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-29 23:24:42,078 | INFO | Consulta de fornecedor: CNPJ=54616176000168 | empresa_id=1
+2025-03-29 23:24:42,080 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-29 23:24:42,705 | INFO | 📦 Dados recebidos da API: (None, None, None, None, None)
+2025-03-29 23:24:42,705 | WARNING | ⚠️ API retornou dados incompletos ou inválidos.
+2025-03-29 23:24:46,820 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-29 23:24:46,822 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-29 23:24:57,738 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:29:14,166 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:29:31,654 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-29 23:29:39,282 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-29 23:29:39,283 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-29 23:29:50,319 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-29 23:29:59,767 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:31:05,145 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:31:26,125 | INFO | Login realizado: user='jm' empresa_id=2
+2025-03-29 23:31:31,584 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:43:36,633 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:48:53,053 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:50:42,035 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:50:59,562 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-29 23:51:50,106 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-29 23:51:55,448 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-29 23:51:55,449 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-29 23:52:27,739 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-29 23:52:50,142 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-30 10:39:10,661 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-30 22:02:28,594 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 09:04:06,163 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 09:05:19,798 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 09:13:59,822 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 09:14:07,689 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-31 09:14:07,697 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 09:14:29,233 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-31 09:14:43,551 | INFO | Consulta de fornecedor: CNPJ=06889034000165 | empresa_id=1
+2025-03-31 09:14:43,558 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-31 09:14:44,154 | INFO | 📦 Dados recebidos da API: ('VIWACE COMERCIAL E INDUSTRIAL LTDA', '2061400', False, 'CE', False)
+2025-03-31 09:14:51,130 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-31 09:15:32,877 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 09:18:39,970 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 09:18:47,093 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-31 09:18:47,097 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 09:18:58,954 | INFO | Consulta de produto: código=52746 | empresa_id=1
+2025-03-31 09:31:13,845 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 09:35:51,386 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 09:43:29,046 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 10:39:51,577 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-31 10:39:58,552 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-31 10:41:34,991 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-31 10:41:45,778 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-31 10:43:16,067 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 10:50:19,941 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-31 10:55:54,012 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-31 11:02:30,101 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-31 11:03:31,160 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-31 11:04:18,927 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 11:04:37,592 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 11:04:43,835 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-31 11:04:43,840 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:05:41,945 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 11:05:51,042 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-31 11:05:51,052 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:06:20,635 | INFO | Consulta de produto: código=52476 | empresa_id=1
+2025-03-31 11:06:32,011 | INFO | Consulta de produto: código=44821 | empresa_id=1
+2025-03-31 11:06:47,990 | INFO | Consulta de produto: código=10828 | empresa_id=1
+2025-03-31 11:07:36,144 | INFO | Consulta de fornecedor: CNPJ=05061143000127 | empresa_id=1
+2025-03-31 11:07:36,150 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-31 11:07:36,747 | INFO | 📦 Dados recebidos da API: ('POTENCIAL COMERCIO DE TAPETES E MATERIAL DE LIMPEZA LTDA', '4789005', True, 'CE', True)
+2025-03-31 11:16:02,079 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 11:20:23,925 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 11:21:28,619 | INFO | Consulta de fornecedor: CNPJ=05505613000102 | empresa_id=1
+2025-03-31 11:21:28,626 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-31 11:21:29,243 | INFO | 📦 Dados recebidos da API: ('M & S DISTRIBUIDORA DE ALIMENTOS LTDA', '4639701', True, 'CE', False)
+2025-03-31 11:22:04,805 | INFO | Consulta de fornecedor: CNPJ=05554484000134 | empresa_id=1
+2025-03-31 11:22:04,812 | INFO | 🌐 Fornecedor não encontrado. Chamando API...
+2025-03-31 11:22:05,292 | INFO | 📦 Dados recebidos da API: ('REALPAN COMERCIO E INDUSTRIA DE PANIFICACAO LTDA', '1091101', False, 'CE', False)
+2025-03-31 11:22:18,555 | INFO | Consulta de produto: código=165396 | empresa_id=1
+2025-03-31 11:29:29,666 | INFO | Login realizado: user='admin' empresa_id=None
+2025-03-31 11:32:15,492 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 11:32:37,738 | INFO | Consulta de fornecedor: CNPJ=05554484000134 | empresa_id=1
+2025-03-31 11:32:37,742 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:35:24,152 | INFO | Consulta de produto: código=165396 | empresa_id=1
+2025-03-31 11:50:21,716 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 11:50:39,452 | INFO | Consulta de fornecedor: CNPJ=05554484000134 | empresa_id=1
+2025-03-31 11:50:39,461 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:51:18,160 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 11:51:27,521 | INFO | Consulta de fornecedor: CNPJ=05554484000134 | empresa_id=1
+2025-03-31 11:51:27,524 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:52:21,844 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 11:52:41,922 | INFO | Consulta de fornecedor: CNPJ=05554484000134 | empresa_id=1
+2025-03-31 11:52:41,928 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:53:04,605 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 11:53:14,233 | INFO | Consulta de fornecedor: CNPJ=05554484000134 | empresa_id=1
+2025-03-31 11:53:14,243 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:53:29,632 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 11:53:37,401 | INFO | Consulta de fornecedor: CNPJ=05554484000134 | empresa_id=1
+2025-03-31 11:53:37,424 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:53:59,555 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 11:54:09,137 | INFO | Consulta de fornecedor: CNPJ=05554484000134 | empresa_id=1
+2025-03-31 11:54:09,144 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:57:17,839 | INFO | Consulta de produto: código=165396 | empresa_id=1
+2025-03-31 11:57:51,496 | INFO | Consulta de fornecedor: CNPJ=05505613000102 | empresa_id=1
+2025-03-31 11:57:51,501 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:58:11,230 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-31 11:58:11,236 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 11:58:28,407 | INFO | Consulta de produto: código=165396 | empresa_id=1
+2025-03-31 12:39:15,622 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 12:39:33,243 | INFO | Consulta de fornecedor: CNPJ=05505613000102 | empresa_id=1
+2025-03-31 12:39:33,259 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 12:40:16,497 | INFO | Consulta de produto: código=165396 | empresa_id=1
+2025-03-31 12:44:17,217 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 12:44:34,103 | INFO | Consulta de fornecedor: CNPJ=05505613000102 | empresa_id=1
+2025-03-31 12:44:34,115 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 12:44:45,434 | INFO | Consulta de produto: código=165396 | empresa_id=1
+2025-03-31 12:46:05,416 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 12:46:17,934 | INFO | Consulta de fornecedor: CNPJ=05505613000102 | empresa_id=1
+2025-03-31 12:46:17,942 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 12:46:30,474 | INFO | Consulta de produto: código=165396 | empresa_id=1
+2025-03-31 12:49:24,246 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 12:49:35,073 | INFO | Consulta de fornecedor: CNPJ=05505613000102 | empresa_id=1
+2025-03-31 12:49:35,077 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 12:49:45,305 | INFO | Consulta de produto: código=165396 | empresa_id=1
+2025-03-31 12:52:20,823 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 12:52:31,327 | INFO | Consulta de fornecedor: CNPJ=05505613000102 | empresa_id=1
+2025-03-31 12:52:31,335 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 12:55:26,964 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 12:55:31,708 | INFO | Consulta de fornecedor: CNPJ=05505613000102 | empresa_id=1
+2025-03-31 12:55:31,717 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 14:33:57,388 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 14:34:15,163 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 14:43:12,397 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 14:44:09,286 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 14:48:37,268 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 14:48:51,078 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 14:49:58,839 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 14:54:48,788 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 14:55:40,596 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 15:05:53,151 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 15:07:38,070 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 15:08:15,310 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 15:09:21,019 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 15:10:22,323 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 15:12:58,771 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 15:14:31,133 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 15:15:24,682 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 22:54:03,378 | WARNING | Falha no login: motivo='Erro inesperado: Pool de conexões não inicializado.'
+2025-03-31 22:54:16,191 | WARNING | Falha no login: motivo='Usuário ou senha inválidos.'
+2025-03-31 22:54:21,008 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 22:55:45,630 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 22:58:09,900 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 22:58:19,614 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 22:59:42,104 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 22:59:51,376 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-31 22:59:51,387 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 23:00:10,596 | INFO | Consulta de fornecedor: CNPJ=54616173000168 | empresa_id=1
+2025-03-31 23:00:10,597 | INFO | 🔁 Fornecedor encontrado no banco, não será feita chamada à API.
+2025-03-31 23:08:43,162 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 23:14:26,151 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 23:30:44,520 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 23:33:34,684 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 23:36:33,160 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 23:39:19,242 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 23:40:30,759 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 23:41:22,556 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-03-31 23:42:43,080 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-04-01 00:12:55,206 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-04-01 00:18:00,868 | INFO | Login realizado: user='atacado' empresa_id=1
+2025-04-01 00:21:29,048 | INFO | Login realizado: user='atacado' empresa_id=1

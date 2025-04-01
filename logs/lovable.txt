@@ -1,0 +1,578 @@
+import sys
+from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
+                              QHBoxLayout, QLabel, QLineEdit, QPushButton, 
+                              QStackedWidget, QFrame, QScrollArea, QMessageBox)
+from PySide6.QtCore import Qt, Signal, Slot
+from PySide6.QtGui import QFont, QIcon
+import re
+
+# Utility for CNPJ formatting
+def format_cnpj(cnpj):
+    # Remove non-numeric characters
+    cnpj = re.sub(r'\D', '', cnpj)
+    
+    # Apply CNPJ mask (XX.XXX.XXX/XXXX-XX)
+    if len(cnpj) <= 2:
+        return cnpj
+    elif len(cnpj) <= 5:
+        return f"{cnpj[:2]}.{cnpj[2:]}"
+    elif len(cnpj) <= 8:
+        return f"{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:]}"
+    elif len(cnpj) <= 12:
+        return f"{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:8]}/{cnpj[8:]}"
+    else:
+        return f"{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:8]}/{cnpj[8:12]}-{cnpj[12:14]}"
+
+# Utility for tax calculations
+def calculate_taxes(cnpj, value):
+    # Mock supplier data for demonstration
+    is_exempt = cnpj.startswith("11")
+    is_simplified = cnpj.startswith("22")
+    
+    taxes = {
+        "icms": 0,
+        "ipi": 0,
+        "pis": 0,
+        "cofins": 0,
+        "total": float(value)
+    }
+    
+    if not is_exempt:
+        if is_simplified:
+            taxes["icms"] = float(value) * 0.12
+        else:
+            taxes["icms"] = float(value) * 0.18
+            taxes["ipi"] = float(value) * 0.10
+            taxes["pis"] = float(value) * 0.0165
+            taxes["cofins"] = float(value) * 0.076
+    
+    taxes["total"] += taxes["icms"] + taxes["ipi"] + taxes["pis"] + taxes["cofins"]
+    return taxes
+
+# Login window
+class LoginWindow(QWidget):
+    loginSuccessful = Signal()
+    
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+        
+    def initUI(self):
+        self.setWindowTitle("Login")
+        self.setMinimumSize(400, 300)
+        
+        layout = QVBoxLayout()
+        
+        # Card-like frame
+        card = QFrame()
+        card.setFrameShape(QFrame.Box)
+        card.setStyleSheet("QFrame { background-color: white; border-radius: 8px; }")
+        card_layout = QVBoxLayout()
+        
+        # Header
+        header_layout = QVBoxLayout()
+        title = QLabel("Comparador de Fornecedores")
+        title.setFont(QFont("Arial", 16, QFont.Bold))
+        title.setAlignment(Qt.AlignCenter)
+        desc = QLabel("Entre com suas credenciais para continuar")
+        desc.setAlignment(Qt.AlignCenter)
+        desc.setStyleSheet("color: gray;")
+        
+        header_layout.addWidget(title)
+        header_layout.addWidget(desc)
+        
+        # Form
+        form_layout = QVBoxLayout()
+        
+        username_label = QLabel("Usuário:")
+        self.username_input = QLineEdit()
+        self.username_input.setPlaceholderText("Digite seu nome de usuário")
+        
+        password_label = QLabel("Senha:")
+        self.password_input = QLineEdit()
+        self.password_input.setPlaceholderText("Digite sua senha")
+        self.password_input.setEchoMode(QLineEdit.Password)
+        
+        login_button = QPushButton("Entrar")
+        login_button.setStyleSheet("background-color: #3b82f6; color: white; padding: 8px;")
+        login_button.clicked.connect(self.attemptLogin)
+        
+        form_layout.addWidget(username_label)
+        form_layout.addWidget(self.username_input)
+        form_layout.addWidget(password_label)
+        form_layout.addWidget(self.password_input)
+        form_layout.addSpacing(15)
+        form_layout.addWidget(login_button)
+        
+        # Combine layouts
+        card_layout.addLayout(header_layout)
+        card_layout.addSpacing(20)
+        card_layout.addLayout(form_layout)
+        card.setLayout(card_layout)
+        
+        layout.addStretch()
+        layout.addWidget(card)
+        layout.addStretch()
+        
+        self.setLayout(layout)
+        
+    def attemptLogin(self):
+        username = self.username_input.text()
+        password = self.password_input.text()
+        
+        if username and password:  # Simple validation
+            self.loginSuccessful.emit()
+        else:
+            QMessageBox.warning(self, "Erro de Login", "Usuário ou senha inválidos")
+
+# Dashboard page with navigation buttons to features
+class DashboardPage(QWidget):
+    supplierSearchClicked = Signal()
+    productComparisonClicked = Signal()
+    
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+        
+    def initUI(self):
+        layout = QVBoxLayout()
+        
+        # Header
+        title = QLabel("Dashboard")
+        title.setFont(QFont("Arial", 18, QFont.Bold))
+        
+        # Option cards
+        card_layout = QHBoxLayout()
+        
+        # Supplier Search Card
+        supplier_card = QFrame()
+        supplier_card.setFrameShape(QFrame.Box)
+        supplier_card.setStyleSheet("QFrame { background-color: white; border-radius: 8px; }")
+        supplier_card.setCursor(Qt.PointingHandCursor)
+        supplier_layout = QVBoxLayout(supplier_card)
+        
+        supplier_title = QLabel("Consultar Fornecedor")
+        supplier_title.setFont(QFont("Arial", 14, QFont.Bold))
+        supplier_desc = QLabel("Consulte informações de um fornecedor pelo CNPJ")
+        supplier_layout.addWidget(supplier_title)
+        supplier_layout.addWidget(supplier_desc)
+        
+        # Connect mouse events
+        supplier_card.mousePressEvent = lambda event: self.supplierSearchClicked.emit()
+        
+        # Product Comparison Card
+        product_card = QFrame()
+        product_card.setFrameShape(QFrame.Box)
+        product_card.setStyleSheet("QFrame { background-color: white; border-radius: 8px; }")
+        product_card.setCursor(Qt.PointingHandCursor)
+        product_layout = QVBoxLayout(product_card)
+        
+        product_title = QLabel("Consultar Produtos")
+        product_title.setFont(QFont("Arial", 14, QFont.Bold))
+        product_desc = QLabel("Compare preços e impostos de diferentes fornecedores")
+        product_layout.addWidget(product_title)
+        product_layout.addWidget(product_desc)
+        
+        # Connect mouse events
+        product_card.mousePressEvent = lambda event: self.productComparisonClicked.emit()
+        
+        card_layout.addWidget(supplier_card)
+        card_layout.addWidget(product_card)
+        
+        # Add logout button
+        logout_button = QPushButton("Sair")
+        logout_button.setStyleSheet("background-color: #ef4444; color: white;")
+        
+        # Combine layouts
+        layout.addWidget(title)
+        layout.addSpacing(20)
+        layout.addLayout(card_layout)
+        layout.addStretch()
+        layout.addWidget(logout_button)
+        
+        self.setLayout(layout)
+
+# Supplier search page
+class SupplierSearchPage(QWidget):
+    backClicked = Signal()
+    
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+        
+    def initUI(self):
+        layout = QVBoxLayout()
+        
+        # Navigation
+        nav_layout = QHBoxLayout()
+        back_button = QPushButton("Voltar")
+        back_button.clicked.connect(lambda: self.backClicked.emit())
+        nav_layout.addWidget(back_button)
+        nav_layout.addStretch()
+        
+        # Title
+        title = QLabel("Consulta de Fornecedor")
+        title.setFont(QFont("Arial", 18, QFont.Bold))
+        
+        # Search form
+        search_layout = QHBoxLayout()
+        self.cnpj_input = QLineEdit()
+        self.cnpj_input.setPlaceholderText("CNPJ do fornecedor")
+        self.cnpj_input.textChanged.connect(self.formatCNPJ)
+        
+        search_button = QPushButton("Buscar")
+        search_button.setStyleSheet("background-color: #3b82f6; color: white;")
+        search_button.clicked.connect(self.searchSupplier)
+        
+        search_layout.addWidget(self.cnpj_input)
+        search_layout.addWidget(search_button)
+        
+        # Supplier information display
+        self.info_frame = QFrame()
+        self.info_frame.setFrameShape(QFrame.Box)
+        self.info_frame.setStyleSheet("QFrame { background-color: white; border-radius: 8px; }")
+        self.info_frame.setVisible(False)
+        
+        info_layout = QVBoxLayout(self.info_frame)
+        self.supplier_name = QLabel()
+        self.supplier_name.setFont(QFont("Arial", 14, QFont.Bold))
+        self.cnpj_label = QLabel()
+        self.tax_info = QLabel()
+        self.simplifiedTax_info = QLabel()
+        
+        info_layout.addWidget(self.supplier_name)
+        info_layout.addWidget(self.cnpj_label)
+        info_layout.addWidget(self.tax_info)
+        info_layout.addWidget(self.simplifiedTax_info)
+        
+        # Combine layouts
+        layout.addLayout(nav_layout)
+        layout.addWidget(title)
+        layout.addSpacing(20)
+        layout.addLayout(search_layout)
+        layout.addSpacing(20)
+        layout.addWidget(self.info_frame)
+        layout.addStretch()
+        
+        self.setLayout(layout)
+    
+    def formatCNPJ(self, text):
+        cursor_pos = self.cnpj_input.cursorPosition()
+        text_len_before = len(text)
+        
+        formatted_cnpj = format_cnpj(text)
+        
+        # Update the text only if it changed
+        if formatted_cnpj != text:
+            self.cnpj_input.setText(formatted_cnpj)
+            
+            # Adjust cursor position
+            if len(formatted_cnpj) != text_len_before:
+                new_position = cursor_pos + (len(formatted_cnpj) - text_len_before)
+                self.cnpj_input.setCursorPosition(min(new_position, len(formatted_cnpj)))
+    
+    def searchSupplier(self):
+        cnpj = self.cnpj_input.text()
+        if not cnpj or len(re.sub(r'\D', '', cnpj)) != 14:
+            QMessageBox.warning(self, "Validação", "CNPJ inválido!")
+            return
+            
+        # Mocking supplier data fetch
+        # In a real application, this would call an API
+        supplier_name = f"Fornecedor {cnpj[:4]}"
+        is_exempt = cnpj.startswith("11")
+        is_simplified = cnpj.startswith("22")
+        
+        # Update UI
+        self.supplier_name.setText(supplier_name)
+        self.cnpj_label.setText(f"CNPJ: {cnpj}")
+        self.tax_info.setText(f"Isento do Decreto: {'Sim' if is_exempt else 'Não'}")
+        self.simplifiedTax_info.setText(f"Regime Simplificado: {'Sim' if is_simplified else 'Não'}")
+        
+        # Show the info frame
+        self.info_frame.setVisible(True)
+
+# Supplier comparison card widget for product comparison
+class SupplierComparisonCard(QFrame):
+    removeClicked = Signal(object)
+    
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setFrameShape(QFrame.Box)
+        self.setStyleSheet("QFrame { background-color: white; border-radius: 8px; }")
+        self.initUI()
+        
+    def initUI(self):
+        layout = QVBoxLayout(self)
+        
+        # Header with remove button
+        header_layout = QHBoxLayout()
+        self.card_title = QLabel("Fornecedor")
+        self.card_title.setFont(QFont("Arial", 14, QFont.Bold))
+        
+        remove_button = QPushButton("X")
+        remove_button.setMaximumWidth(30)
+        remove_button.clicked.connect(lambda: self.removeClicked.emit(self))
+        
+        header_layout.addWidget(self.card_title)
+        header_layout.addWidget(remove_button)
+        
+        # Input area
+        input_layout = QVBoxLayout()
+        
+        # CNPJ input
+        cnpj_label = QLabel("CNPJ do Fornecedor:")
+        self.cnpj_input = QLineEdit()
+        self.cnpj_input.setPlaceholderText("CNPJ do fornecedor")
+        self.cnpj_input.textChanged.connect(self.formatCNPJ)
+        
+        # Value input
+        value_label = QLabel("Valor do Produto:")
+        self.value_input = QLineEdit()
+        self.value_input.setPlaceholderText("Valor do produto")
+        
+        # Process button
+        process_button = QPushButton("Processar")
+        process_button.setStyleSheet("background-color: #3b82f6; color: white;")
+        process_button.clicked.connect(self.processData)
+        
+        input_layout.addWidget(cnpj_label)
+        input_layout.addWidget(self.cnpj_input)
+        input_layout.addWidget(value_label)
+        input_layout.addWidget(self.value_input)
+        input_layout.addWidget(process_button)
+        
+        # Results area
+        self.results_frame = QFrame()
+        self.results_frame.setVisible(False)
+        results_layout = QVBoxLayout(self.results_frame)
+        
+        self.supplier_name = QLabel()
+        self.supplier_name.setFont(QFont("Arial", 12, QFont.Bold))
+        
+        self.tax_info = QLabel()
+        self.simplified_info = QLabel()
+        
+        tax_title = QLabel("Impostos Aplicados:")
+        tax_title.setFont(QFont("Arial", 10, QFont.Bold))
+        
+        self.icms_value = QLabel()
+        self.ipi_value = QLabel()
+        self.pis_value = QLabel()
+        self.cofins_value = QLabel()
+        self.total_value = QLabel()
+        self.total_value.setFont(QFont("Arial", 12, QFont.Bold))
+        
+        results_layout.addWidget(self.supplier_name)
+        results_layout.addWidget(self.tax_info)
+        results_layout.addWidget(self.simplified_info)
+        results_layout.addWidget(tax_title)
+        results_layout.addWidget(self.icms_value)
+        results_layout.addWidget(self.ipi_value)
+        results_layout.addWidget(self.pis_value)
+        results_layout.addWidget(self.cofins_value)
+        results_layout.addWidget(self.total_value)
+        
+        # Combine layouts
+        layout.addLayout(header_layout)
+        layout.addLayout(input_layout)
+        layout.addWidget(self.results_frame)
+        
+    def formatCNPJ(self, text):
+        cursor_pos = self.cnpj_input.cursorPosition()
+        text_len_before = len(text)
+        
+        formatted_cnpj = format_cnpj(text)
+        
+        # Update the text only if it changed
+        if formatted_cnpj != text:
+            self.cnpj_input.setText(formatted_cnpj)
+            
+            # Adjust cursor position
+            if len(formatted_cnpj) != text_len_before:
+                new_position = cursor_pos + (len(formatted_cnpj) - text_len_before)
+                self.cnpj_input.setCursorPosition(min(new_position, len(formatted_cnpj)))
+    
+    def processData(self):
+        cnpj = self.cnpj_input.text()
+        value_text = self.value_input.text().replace(',', '.')
+        
+        try:
+            value = float(value_text)
+        except ValueError:
+            QMessageBox.warning(self, "Validação", "Valor inválido!")
+            return
+            
+        if not cnpj or len(re.sub(r'\D', '', cnpj)) != 14:
+            QMessageBox.warning(self, "Validação", "CNPJ inválido!")
+            return
+            
+        # Mocking supplier data fetch and tax calculation
+        supplier_name = f"Fornecedor {cnpj[:4]}"
+        is_exempt = cnpj.startswith("11")
+        is_simplified = cnpj.startswith("22")
+        
+        taxes = calculate_taxes(cnpj, value)
+        
+        # Update UI
+        self.supplier_name.setText(supplier_name)
+        self.tax_info.setText(f"Isento do Decreto: {'Sim' if is_exempt else 'Não'}")
+        self.simplified_info.setText(f"Regime Simplificado: {'Sim' if is_simplified else 'Não'}")
+        
+        self.icms_value.setText(f"ICMS: R$ {taxes['icms']:.2f}")
+        self.ipi_value.setText(f"IPI: R$ {taxes['ipi']:.2f}")
+        self.pis_value.setText(f"PIS: R$ {taxes['pis']:.2f}")
+        self.cofins_value.setText(f"COFINS: R$ {taxes['cofins']:.2f}")
+        self.total_value.setText(f"Total: R$ {taxes['total']:.2f}")
+        
+        # Show the results
+        self.results_frame.setVisible(True)
+
+# Product comparison page
+class ProductComparisonPage(QWidget):
+    backClicked = Signal()
+    
+    def __init__(self):
+        super().__init__()
+        self.comparison_cards = []
+        self.initUI()
+        
+    def initUI(self):
+        self.layout = QVBoxLayout()
+        
+        # Navigation
+        nav_layout = QHBoxLayout()
+        back_button = QPushButton("Voltar")
+        back_button.clicked.connect(lambda: self.backClicked.emit())
+        nav_layout.addWidget(back_button)
+        nav_layout.addStretch()
+        
+        # Title
+        title = QLabel("Comparação de Produtos")
+        title.setFont(QFont("Arial", 18, QFont.Bold))
+        
+        # Add button
+        add_button_layout = QHBoxLayout()
+        add_button = QPushButton("+")
+        add_button.setFixedSize(40, 40)
+        add_button.setStyleSheet("background-color: #3b82f6; color: white; border-radius: 20px;")
+        add_button.clicked.connect(self.addComparisonCard)
+        add_button_layout.addStretch()
+        add_button_layout.addWidget(add_button)
+        
+        # Scroll area for cards
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll_content = QWidget()
+        self.cards_layout = QVBoxLayout(scroll_content)
+        scroll.setWidget(scroll_content)
+        
+        # Add initial card
+        self.addComparisonCard()
+        
+        # Combine layouts
+        self.layout.addLayout(nav_layout)
+        self.layout.addWidget(title)
+        self.layout.addSpacing(10)
+        self.layout.addLayout(add_button_layout)
+        self.layout.addWidget(scroll)
+        
+        self.setLayout(self.layout)
+    
+    def addComparisonCard(self):
+        if len(self.comparison_cards) >= 4:
+            QMessageBox.information(self, "Limite atingido", "Você já tem o máximo de 4 fornecedores para comparação.")
+            return
+        
+        card = SupplierComparisonCard()
+        card.removeClicked.connect(self.removeComparisonCard)
+        
+        self.comparison_cards.append(card)
+        self.cards_layout.addWidget(card)
+    
+    def removeComparisonCard(self, card):
+        if card in self.comparison_cards:
+            self.comparison_cards.remove(card)
+            card.deleteLater()
+
+# Main application window
+class MainApp(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+        
+    def initUI(self):
+        self.setWindowTitle("Comparador de Fornecedores")
+        self.setMinimumSize(800, 600)
+        
+        # Create stacked widget for different pages
+        self.stacked_widget = QStackedWidget()
+        
+        # Create pages
+        self.login_page = LoginWindow()
+        self.dashboard_page = DashboardPage()
+        self.supplier_search_page = SupplierSearchPage()
+        self.product_comparison_page = ProductComparisonPage()
+        
+        # Add pages to stacked widget
+        self.stacked_widget.addWidget(self.login_page)
+        self.stacked_widget.addWidget(self.dashboard_page)
+        self.stacked_widget.addWidget(self.supplier_search_page)
+        self.stacked_widget.addWidget(self.product_comparison_page)
+        
+        # Set up connections
+        self.login_page.loginSuccessful.connect(self.showDashboard)
+        self.dashboard_page.supplierSearchClicked.connect(self.showSupplierSearch)
+        self.dashboard_page.productComparisonClicked.connect(self.showProductComparison)
+        self.supplier_search_page.backClicked.connect(self.showDashboard)
+        self.product_comparison_page.backClicked.connect(self.showDashboard)
+        
+        # Set central widget
+        self.setCentralWidget(self.stacked_widget)
+        
+    @Slot()
+    def showDashboard(self):
+        self.stacked_widget.setCurrentWidget(self.dashboard_page)
+        
+    @Slot()
+    def showSupplierSearch(self):
+        self.stacked_widget.setCurrentWidget(self.supplier_search_page)
+        
+    @Slot()
+    def showProductComparison(self):
+        self.stacked_widget.setCurrentWidget(self.product_comparison_page)
+
+def main():
+    app = QApplication(sys.argv)
+    app.setStyle("Fusion")  # Use Fusion style for a more modern look
+    
+    # Set application-wide stylesheet
+    app.setStyleSheet("""
+        QWidget {
+            font-family: Arial;
+            font-size: 12px;
+        }
+        QFrame {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        QPushButton {
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: none;
+        }
+        QLineEdit {
+            padding: 8px;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+        }
+    """)
+    
+    window = MainApp()
+    window.show()
+    
+    sys.exit(app.exec())
+
+if __name__ == "__main__":
+    main()
