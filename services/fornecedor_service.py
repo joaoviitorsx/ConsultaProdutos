@@ -25,9 +25,9 @@ def consultar_dados_fornecedor(cnpj: str, empresa_id: int | None) -> Fornecedor 
                 cnpj=resultado_db["cnpj"],
                 razao_social=resultado_db["razao_social"],
                 cnae_codigo=resultado_db["cnae_codigo"],
-                isento=bool(resultado_db["isento"]),
+                isento=bool(int(resultado_db["isento"])),
                 uf=resultado_db["uf"],
-                simples=bool(resultado_db["simples"])
+                simples=bool(int(resultado_db["simples"]))
             )
 
         # 2. Se não encontrou, chama a API
@@ -60,9 +60,9 @@ def consultar_dados_fornecedor(cnpj: str, empresa_id: int | None) -> Fornecedor 
             cnpj=cnpj_limpo,
             razao_social=razao_social,
             cnae_codigo=cnae_codigo,
-            isento=isento,
+            isento=bool(int(isento)),
             uf=uf,
-            simples=simples
+            simples=bool(int(simples))
         )
 
     except Exception as e:
