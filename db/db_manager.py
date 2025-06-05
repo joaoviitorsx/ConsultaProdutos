@@ -21,10 +21,10 @@ class DBManager:
                 pool_size=10,
                 pool_reset_session=True,
                 host="127.0.0.1",  
-                port=1606,
+                port=3306,
                 database="consulta_produtos",
                 user="root",
-                password="jv12345",
+                password="1234",
                 autocommit=True,
                 connection_timeout=3
             )
