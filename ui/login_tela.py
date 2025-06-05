@@ -59,7 +59,6 @@ class LoginTela(QWidget):
         layout = QVBoxLayout(self)
         layout.setAlignment(Qt.AlignCenter)
 
-        # Logo
         logo = QLabel(self)
         pixmap = QPixmap("images/logo.png")
         if not pixmap.isNull():
@@ -67,15 +66,13 @@ class LoginTela(QWidget):
         logo.setAlignment(Qt.AlignCenter)
         layout.addWidget(logo)
 
-        # Card Container
         card = QFrame()
         card.setObjectName("cardContainer")
         card.setFixedWidth(450)
         card_layout = QVBoxLayout(card)
         card_layout.setAlignment(Qt.AlignCenter)
 
-        # Título
-        label_titulo = QLabel("Acessar")
+        label_titulo = QLabel("Login")
         label_titulo.setObjectName("titulo")
         label_titulo.setAlignment(Qt.AlignCenter)
         card_layout.addWidget(label_titulo)
@@ -87,7 +84,6 @@ class LoginTela(QWidget):
 
         card_layout.addSpacerItem(QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Fixed))
 
-        # Campos de entrada
         self.input_usuario = QLineEdit()
         self.input_usuario.setPlaceholderText("Usuário")
         self.input_usuario.setObjectName("campoInput")
@@ -104,7 +100,6 @@ class LoginTela(QWidget):
 
         card_layout.addSpacerItem(QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Fixed))
 
-        # Botão de login
         self.btn_entrar = QPushButton("Entrar")
         self.btn_entrar.setObjectName("botaoPrincipal")
         self.btn_entrar.setStyleSheet("""
