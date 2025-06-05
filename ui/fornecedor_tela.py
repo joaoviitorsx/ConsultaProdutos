@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton, QSpacerItem, QSizePolicy, QFrame
-from PySide6.QtCore import Qt, QThread, Signal
-from ui.produto_tela import ProdutoTela
+from PySide6.QtCore import Qt, QThread, Signal, QSize
+from PySide6.QtGui import QFont, QIcon
 from services.fornecedor_service import consultar_dados_fornecedor
 from utils.validacao import limpar_cnpj
 from utils.mensagem import mensagem_error, mensagem_aviso
@@ -39,20 +39,17 @@ class FornecedorTela(QWidget):
         layout = QVBoxLayout(self)
         layout.setAlignment(Qt.AlignCenter)
 
-        # Card centralizado
         card = QFrame()
         card.setObjectName("cardContainer")
         card.setFixedWidth(450)
         card_layout = QVBoxLayout(card)
         card_layout.setAlignment(Qt.AlignCenter)
 
-        # Título
         label_titulo = QLabel("Consultar Fornecedor")
         label_titulo.setObjectName("titulo")
         label_titulo.setAlignment(Qt.AlignCenter)
         card_layout.addWidget(label_titulo)
 
-        # Descrição
         label_desc = QLabel("Informe o CNPJ do fornecedor para prosseguir")
         label_desc.setObjectName("descricao")
         label_desc.setAlignment(Qt.AlignCenter)
@@ -60,7 +57,6 @@ class FornecedorTela(QWidget):
 
         card_layout.addSpacerItem(QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Fixed))
 
-        # Campo CNPJ
         self.input_cnpj = QLineEdit()
         self.input_cnpj.setPlaceholderText("00.000.000/0000-00")
         self.input_cnpj.setInputMask("00.000.000/0000-00")
@@ -71,7 +67,6 @@ class FornecedorTela(QWidget):
 
         card_layout.addSpacerItem(QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Fixed))
 
-        # Botão de consulta
         self.btn_consultar = QPushButton("Consultar")
         self.btn_consultar.setObjectName("botaoPrincipal")
         self.btn_consultar.setStyleSheet("""
@@ -96,6 +91,28 @@ class FornecedorTela(QWidget):
         self.btn_consultar.setCursor(Qt.PointingHandCursor)
         self.btn_consultar.clicked.connect(self.iniciar_consulta)
         card_layout.addWidget(self.btn_consultar)
+
+        self.btn_voltar = QPushButton("Voltar")
+        self.btn_voltar.setObjectName("botaoPrincipal")
+        self.btn_voltar.setCursor(Qt.PointingHandCursor)
+        self.btn_voltar.setStyleSheet("""
+            QPushButton#botaoPrincipal {
+                background-color: #E53935;
+                color: white;
+                border-radius: 8px;
+                margin-top: 20px;
+                padding: 12px;
+                font-weight: bold;
+                font-size: 14px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+            QPushButton#botaoPrincipal:hover {
+                background-color: #C62828;
+            }
+        """)
+        self.btn_voltar.clicked.connect(self.voltar_dashboard)
+        card_layout.addWidget(self.btn_voltar)
+
 
         layout.addWidget(card)
 
@@ -122,4 +139,10 @@ class FornecedorTela(QWidget):
 
         self.info_tela = FornecedorInfoTela(self.user, self.empresa_id, fornecedor)
         self.info_tela.showMaximized()
+        self.close()
+
+    def voltar_dashboard(self):
+        from ui.dashboardinicial import DashboardInicial
+        self.dashboard = DashboardInicial(self.user, self.empresa_id)
+        self.dashboard.showMaximized()
         self.close()
