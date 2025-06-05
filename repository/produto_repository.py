@@ -31,7 +31,7 @@ def buscar_produto_por_empresa(codigo: str, empresa_id: int) -> Produto | None:
                     codigo=resultado['codigo'],
                     nome=resultado['produto'],
                     ncm=resultado['ncm'],
-                    aliquota=parse_aliquota(resultado['aliquota'])
+                    aliquota=resultado['aliquota']
                 )
             return None
 
@@ -61,7 +61,7 @@ def buscar_produto_globalmente(codigo: str) -> Produto | None:
                     codigo=resultado['codigo'],
                     nome=resultado['produto'],
                     ncm=resultado['ncm'],
-                    aliquota=parse_aliquota(resultado['aliquota'])
+                    aliquota=resultado['aliquota']
                 )
             return None
 
