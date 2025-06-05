@@ -95,3 +95,12 @@ def validar_cnpj(cnpj: str) -> bool:
     cnpj = remover_caracteres_nao_numericos(cnpj)
     return len(cnpj) == 14 and cnpj.isdigit()
 
+async def buscar_informacoes_api_segura(cnpj: str) -> tuple | None:
+    try:
+        razao_social, cnae, isento, uf, simples = await buscar_informacoes(cnpj)
+        if not all([razao_social, cnae, uf]):
+            return None
+        return razao_social, cnae, isento, uf, simples
+    except Exception as e:
+        print(f"❌ Erro ao consultar CNPJ na API: {e}")
+        return None
