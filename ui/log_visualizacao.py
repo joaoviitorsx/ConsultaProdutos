@@ -21,7 +21,6 @@ class LogVisualizacaoTela(QWidget):
         titulo.setStyleSheet("color: white; font-size: 20pt; font-weight: bold;")
         layout.addWidget(titulo)
 
-        # Filtro
         filtro_frame = QFrame()
         filtro_frame.setStyleSheet("background-color: #1F2536; border-radius: 8px;")
         filtro_layout = QHBoxLayout(filtro_frame)
@@ -57,7 +56,6 @@ class LogVisualizacaoTela(QWidget):
 
         layout.addWidget(filtro_frame)
 
-        # Tabela de logs
         tabela_container = QFrame()
         tabela_container.setStyleSheet("background-color: #1F2536; border: 1px solid #2C3144; border-radius: 8px;")
         tabela_layout = QVBoxLayout(tabela_container)
