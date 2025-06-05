@@ -140,11 +140,9 @@ class AdminTela(QWidget):
 
         layout_principal.addWidget(header)
 
-        # CONTEÚDO PRINCIPAL
         conteudo = QHBoxLayout()
         conteudo.setContentsMargins(0, 0, 0, 0)
 
-        # SIDEBAR
         self.sidebar_scroll = QScrollArea()
         self.sidebar_scroll.setFixedWidth(260)
         self.sidebar_scroll.setWidgetResizable(True)
@@ -183,7 +181,6 @@ class AdminTela(QWidget):
 
         sidebar_layout.addWidget(self.sidebar, stretch=1)
 
-        # Criar botão de sair e container antes de adicionar ao layout
         self.btn_sair = QPushButton("  Sair")
         self.btn_sair.setIcon(QIcon("images/sair1.png"))
         self.btn_sair.setCursor(Qt.PointingHandCursor)
@@ -202,7 +199,6 @@ class AdminTela(QWidget):
         sidebar_layout.addWidget(sair_container)
         self.sidebar_scroll.setWidget(sidebar_inner)
 
-        # CONTEÚDO CENTRAL
         self.stack = QStackedWidget()
         self.tela_dashboard = DashboardAdminTela()
         self.tela_fornecedor = FornecedorAdminTela()
@@ -235,7 +231,6 @@ class AdminTela(QWidget):
         item.setSizeHint(QSize(200, 40))
         self.sidebar.addItem(item)
 
-        # Aplica o cursor de mão ao item da lista após inserção
         index = self.sidebar.count() - 1
         item_widget = self.sidebar.item(index)
         self.sidebar.item(index).setData(Qt.UserRole, Qt.PointingHandCursor)
@@ -246,11 +241,9 @@ class AdminTela(QWidget):
         sidebar_aberta = largura_atual > 0
         nova_largura = 0 if sidebar_aberta else 260
 
-        # Atualiza ícone do botão
         novo_icone = QIcon("images/sidebarfechar.png") if not sidebar_aberta else QIcon("images/sidebarabrir.png")
         self.btn_toggle_menu.setIcon(novo_icone)
 
-        # Animações de abertura/fechamento
         anim1 = QPropertyAnimation(self.sidebar_scroll, b"minimumWidth")
         anim2 = QPropertyAnimation(self.sidebar_scroll, b"maximumWidth")
 
