@@ -3,8 +3,6 @@ from PySide6.QtCore import Qt
 from PySide6.QtGui import QIcon
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
-
-# Dados reais
 from repository.atividade_repository import obter_atividades_por_dia
 from repository.produto_admin_repository import listar_ultimos_produtos, contar_produtos, contar_produtos_mes_atual
 from repository.usuario_repository import listar_ultimos_usuarios, contar_usuarios, contar_usuarios_mes_atual
@@ -64,7 +62,6 @@ class DashboardAdminTela(QWidget):
         layout.setContentsMargins(25, 25, 25, 25)
         layout.setSpacing(20)
 
-        # Cards
         self.cards_layout = QHBoxLayout()
         self.cards_layout.setSpacing(15)
 
@@ -78,7 +75,6 @@ class DashboardAdminTela(QWidget):
 
         layout.addLayout(self.cards_layout)
 
-        # Gráfico
         grafico_frame = QFrame()
         grafico_frame.setStyleSheet("""
             QFrame {
@@ -95,7 +91,6 @@ class DashboardAdminTela(QWidget):
         self.grafico_layout.addWidget(QLabel("Relatório de Atividades"))
         layout.addWidget(grafico_frame)
 
-        # Últimos produtos
         transacoes_frame = QFrame()
         transacoes_frame.setStyleSheet("""
             QFrame {
@@ -108,11 +103,9 @@ class DashboardAdminTela(QWidget):
         self.transacoes_layout.addWidget(QLabel("Últimos Produtos", styleSheet="color: white; font-weight: bold; font-size: 12pt;"))
         layout.addWidget(transacoes_frame)
 
-        # Últimos usuários
         usuarios_frame, self.usuarios_layout = self.criar_bloco_listagem("Últimos Usuários")
         layout.addWidget(usuarios_frame)
 
-        # Últimos fornecedores
         fornecedores_frame, self.fornecedores_layout = self.criar_bloco_listagem("Últimos Fornecedores")
         layout.addWidget(fornecedores_frame)
 
@@ -135,12 +128,10 @@ class DashboardAdminTela(QWidget):
 
     def carregar_dados(self):
         try:
-            # Cards - valores principais
             self.card_fornecedores.set_valor(contar_fornecedores())
             self.card_produtos.set_valor(contar_produtos())
             self.card_usuarios.set_valor(contar_usuarios())
 
-            # Cards - subtítulos dinâmicos
             self.card_fornecedores.set_extra(f"+{contar_fornecedores_mes_atual()} este mês")
             self.card_produtos.set_extra(f"+{contar_produtos_mes_atual()} este mês")
 
@@ -148,10 +139,8 @@ class DashboardAdminTela(QWidget):
             subtitulo_usuarios = "Nenhum novo" if novos_usuarios == 0 else f"+{novos_usuarios} este mês"
             self.card_usuarios.set_extra(subtitulo_usuarios)
 
-            # Gráfico
             self.gerar_grafico_atividades(self.grafico_layout)
 
-            # Listagens
             self.atualizar_transacoes()
             self.atualizar_usuarios()
             self.atualizar_fornecedores()
