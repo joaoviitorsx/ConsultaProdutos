@@ -22,7 +22,6 @@ class ProdutoAdminTela(QWidget):
         titulo.setStyleSheet("color: white; font-size: 20pt; font-weight: bold;")
         layout.addWidget(titulo)
 
-        # Frame de filtros (empresa + atualizar)
         filtro_frame = QFrame()
         filtro_frame.setStyleSheet("background-color: #1F2536; border-radius: 8px;")
         filtro_layout = QHBoxLayout(filtro_frame)
@@ -56,7 +55,6 @@ class ProdutoAdminTela(QWidget):
 
         layout.addWidget(filtro_frame)
 
-        # ⬅️ BARRA DE PESQUISA
         self.input_pesquisa = QLineEdit()
         self.input_pesquisa.setPlaceholderText("Buscar por código, nome ou NCM")
         self.input_pesquisa.setStyleSheet("""
@@ -71,7 +69,6 @@ class ProdutoAdminTela(QWidget):
         self.input_pesquisa.textChanged.connect(self.filtrar_tabela)
         layout.addWidget(self.input_pesquisa)
 
-        # Tabela
         tabela_container = QFrame()
         tabela_container.setStyleSheet("background-color: #1F2536; border: 1px solid #2C3144; border-radius: 8px;")
         tabela_layout = QVBoxLayout(tabela_container)
