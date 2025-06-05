@@ -19,33 +19,28 @@ class CadastroEmpresaTela(QWidget):
         layout.setContentsMargins(30, 30, 30, 30)
         layout.setSpacing(20)
 
-        # Título
         titulo = QLabel("Cadastrar Nova Empresa")
         titulo.setStyleSheet("font-size: 20pt; font-weight: bold; color: white;")
         titulo.setAlignment(Qt.AlignCenter)
         layout.addWidget(titulo)
 
-        # Container central dos campos
         campos_frame = QFrame()
         campos_layout = QVBoxLayout(campos_frame)
         campos_layout.setAlignment(Qt.AlignCenter)
         campos_layout.setSpacing(15)
 
-        # Campo: Razão Social
         self.input_razao = QLineEdit()
         self.input_razao.setPlaceholderText("Razão Social")
         self.input_razao.setFixedWidth(300)
         self.input_razao.setStyleSheet("padding: 8px; background-color: #2C3144; border-radius: 6px; color: white;")
         campos_layout.addWidget(self.input_razao)
 
-        # Campo: Usuário
         self.input_usuario = QLineEdit()
         self.input_usuario.setPlaceholderText("Usuário (Login)")
         self.input_usuario.setFixedWidth(300)
         self.input_usuario.setStyleSheet("padding: 8px; background-color: #2C3144; border-radius: 6px; color: white;")
         campos_layout.addWidget(self.input_usuario)
 
-        # Campo: Senha
         self.input_senha = QLineEdit()
         self.input_senha.setPlaceholderText("Senha")
         self.input_senha.setEchoMode(QLineEdit.Password)
@@ -53,7 +48,6 @@ class CadastroEmpresaTela(QWidget):
         self.input_senha.setStyleSheet("padding: 8px; background-color: #2C3144; border-radius: 6px; color: white;")
         campos_layout.addWidget(self.input_senha)
 
-        # Botão: Salvar
         self.btn_salvar = QPushButton("Salvar Empresa")
         self.btn_salvar.setCursor(Qt.PointingHandCursor)
         self.btn_salvar.setFixedWidth(300)
